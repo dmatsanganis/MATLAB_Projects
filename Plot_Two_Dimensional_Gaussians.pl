@@ -18,6 +18,18 @@ X22p = X22 - MU2(2);
 SIGMA1inv = inv(SIGMA1);
 SIGMA2inv = inv(SIGMA2);
 
+EXP_FACTOR1 = X11p.^2 * SIGMA1inv(1,1) + ...
+              (SIGMA1inv(1,2)+SIGMA1inv(2,1)) * (X11p .* X12p) + ...
+              X12p.^2 * SIGMA1inv(2,2);
+EXP_FACTOR2 = X21p.^2 * SIGMA2inv(1,1) + ...
+              (SIGMA2inv(1,2)+SIGMA2inv(2,1)) * (X21p .* X22p) + ...
+              X22p.^2 * SIGMA2inv(2,2);
+
+P1 = exp(-0.5 * EXP_FACTOR1);
+P1 = P1 * (1/(2*pi*sqrt(det(SIGMA1))));
+P2 = exp(-0.5 * EXP_FACTOR2);
+P2 = P2 * (1/(2*pi*sqrt(det(SIGMA2))));
+
 figure('Name','Two-Dimensional Gaussian PDFs');
 
 colormap([1 0 0;0 0 1]);
