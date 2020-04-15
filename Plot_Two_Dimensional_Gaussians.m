@@ -31,13 +31,17 @@ EXP_FACTOR1 = X11p.^2 * SIGMA1inv(1,1) + ...
 EXP_FACTOR2 = X21p.^2 * SIGMA2inv(1,1) + ...
               (SIGMA2inv(1,2)+SIGMA2inv(2,1)) * (X21p .* X22p) + ...
               X22p.^2 * SIGMA2inv(2,2);
+% Compute the quantities EXP_FACTOR1 and EXP_FACTOR2 that appear within the
+% exponentials.             
 
 P1 = exp(-0.5 * EXP_FACTOR1);
 P1 = P1 * (1/(2*pi*sqrt(det(SIGMA1))));
 P2 = exp(-0.5 * EXP_FACTOR2);
 P2 = P2 * (1/(2*pi*sqrt(det(SIGMA2))));
+% Compute the pdf quantities P1 and P2.
 
 figure('Name','Two-Dimensional Gaussian PDFs');
+% Plot pdf files.
 
 colormap([1 0 0;0 0 1]);
 surf(X11,X12,P1);
@@ -47,6 +51,7 @@ hold off
 xlabel('Feature_1');
 ylabel('Feature_2');
 zlabel('Probability');
+% Red and Blue Colormap.
 
 figure('Name','Two-Dimensional Gaussian Surfaces');
 hold on
@@ -56,5 +61,6 @@ hold off
 grid on
 xlabel('Feature_1');
 ylabel('Feature_2');
+% Plot surfaces.
 
 end
