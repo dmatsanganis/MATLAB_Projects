@@ -1,3 +1,11 @@
+% This script file simulates the data generation process for a binary
+% classification problem in a two-dimensional feature space. Moreover, the 
+% class-conditional probability density functions for the two classes are
+% given by the normal distribution. Specifically, we assume that:
+
+% p(x|w1) = N_2(MU1,SIGMA1) and p(x|w2) = N_2(MU2,SIGMA2)
+%______________________________________________________________________________________
+
 % Set the centers MU1 and MU2 for the two probability density functions.
 MU1 = [4 4]';
 MU2 = [8 8]';
