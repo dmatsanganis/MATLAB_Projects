@@ -46,6 +46,7 @@ p_range = p_min:dp:p_max;
 % Initialize Figure.
 figure('Name','Capture P Ranging');
 
+% Loop through the various p values.
 for p = p_range
     clf
     axis equal
