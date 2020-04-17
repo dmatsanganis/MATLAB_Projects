@@ -1,10 +1,22 @@
+% Set the centers MU1 and MU2 for the two probability density functions.
 MU1 = [4 4]';
 MU2 = [8 8]';
+
+% Set the common covariance matrix for the two probability density
+% functions.
 SIGMA = eye(2);
+
+% Set the number of points to be sampled from each distribution.
 N = 1500;
+
+% Initialize the random seed for the normal random generator.
 rng(0);
+
+% Generate samples for both classes.
 C1 = mvnrnd(MU1,SIGMA,N);
 C2 = mvnrnd(MU2,SIGMA,N);
+
+% Plot the data samples from both distributions.
 figure('Name','Data Distribution');
 hold on
 plot(C1(:,1),C1(:,2),'or','LineWidth',2);
