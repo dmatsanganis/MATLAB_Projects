@@ -24,6 +24,10 @@ plot(C2(:,1),C2(:,2),'og','LineWidth',2);
 grid on
 xlabel('x_1');
 ylabel('x_2');
+
+% Compute the [2x2] matrices R1 and R2 which are of the following form:
+%      |x11_min x11_max|          |x21_min x22_max|
+% R1 = |x12_min x12_max| and R2 = |x22_min x22_max|
 R1 = minmax(C1');
 R2 = minmax(C2');
 PlotTwoDimensionalGaussians(R1,R2,MU1,MU2,SIGMA,SIGMA);
