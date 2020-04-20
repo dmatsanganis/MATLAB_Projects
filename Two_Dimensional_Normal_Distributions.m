@@ -72,4 +72,4 @@ for p = p_range
     ylabel('x_2');
     % Pause for a little.
     pause(0.1);
-end
+end 
