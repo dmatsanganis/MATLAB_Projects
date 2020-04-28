@@ -1,2 +1,2 @@
 # MATLAB_Projects
-MATLAB Projects from my University.
+MATLAB Projects from my University's Courses.
