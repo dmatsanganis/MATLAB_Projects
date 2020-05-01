@@ -30,6 +30,8 @@ Go = subs(G,[mu1 mu2 p c1 c2],[MU1 MU2 P C1 C2]);
 % remain a symbolic object.
 
 Go = vpa(Go);
+% Get the solutions to the equations Go(x) = 0.
+
 
 
 % This script file provides fundamental computational functionality for the
