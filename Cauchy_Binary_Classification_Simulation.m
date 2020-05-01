@@ -30,3 +30,51 @@ Go = subs(G,[mu1 mu2 p c1 c2],[MU1 MU2 P C1 C2]);
 % remain a symbolic object.
 
 Go = vpa(Go);
+
+
+% This script file provides fundamental computational functionality for the
+% simulation of binary classification problem within an one-dimensional 
+% feature space. The class-conditional probability density functions for 
+% the problem will be given by the parameterized Cauchy distribution as:
+%   
+%                     1              1
+%     P(x;MU,C) = ------- *  ------------------        [1]
+%                 pi * C                  2
+%                                 (x - MU)   
+%                           1 + ----------
+%                                     2 
+%                                    C  
+
+% Assumming that scale parameters for the class-conditional probability 
+% denstity functions are given by (C1) and (C2), and the corresponding  
+% location parameters parameters (mean values) are given by (MU1) and (MU2)
+% , we may write that:
+%                      p(x|W1) = p(x;MU1,C1) and p(x|W2) = p(x;MU2,C2)    [2]
+
+% The a-priori proababilities for the two classes W1 and W2 such that: 
+% P(W1) = P and P(W2) = 1 - P. Thus, the condition for equiprobable classes
+% translates to:
+%               P(W1) = P(W2) ==> P = 0.5 [3]% This script file provides fundamental computational functionality for the
+% simulation of binary classification problem within an one-dimensional 
+% feature space. The class-conditional probability density functions for 
+% the problem will be given by the parameterized Cauchy distribution as:
+%   
+%                     1              1
+%     P(x;MU,C) = ------- *  ------------------        [1]
+%                 pi * C                  2
+%                                 (x - MU)   
+%                           1 + ----------
+%                                     2 
+%                                    C  
+
+% Assumming that scale parameters for the class-conditional probability 
+% denstity functions are given by (C1) and (C2), and the corresponding  
+% location parameters parameters (mean values) are given by (MU1) and (MU2)
+% , we may write that:
+%                      p(x|W1) = p(x;MU1,C1) and p(x|W2) = p(x;MU2,C2)    [2]
+
+% The a-priori proababilities for the two classes W1 and W2 such that: 
+% P(W1) = P and P(W2) = 1 - P. Thus, the condition for equiprobable classes
+% translates to:
+%               P(W1) = P(W2) ==> P = 0.5 [3]
+
