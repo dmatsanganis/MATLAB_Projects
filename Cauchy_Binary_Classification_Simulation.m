@@ -29,8 +29,6 @@ Go = subs(G,[mu1 mu2 p c1 c2],[MU1 MU2 P C1 C2]);
 % objects to simplify the expression for Go. The resulting Go variable will
 % remain a symbolic object.
 
-Go = vpa(Go);
-% Get the solutions to the equations Go(x) = 0.
 
 
 
