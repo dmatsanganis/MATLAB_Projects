@@ -54,7 +54,9 @@ Go = subs(G,[mu1 mu2 p c1 c2],[MU1 MU2 P C1 C2]);
 % The a-priori proababilities for the two classes W1 and W2 such that: 
 % P(W1) = P and P(W2) = 1 - P. Thus, the condition for equiprobable classes
 % translates to:
-%               P(W1) = P(W2) ==> P = 0.5 [3]% This script file provides fundamental computational functionality for the
+%               P(W1) = P(W2) ==> P = 0.5 [3]% This script file provides 
+%                        fundamental computational functionality for the
+%
 % simulation of binary classification problem within an one-dimensional 
 % feature space. The class-conditional probability density functions for 
 % the problem will be given by the parameterized Cauchy distribution as:
@@ -77,4 +79,4 @@ Go = subs(G,[mu1 mu2 p c1 c2],[MU1 MU2 P C1 C2]);
 % P(W1) = P and P(W2) = 1 - P. Thus, the condition for equiprobable classes
 % translates to:
 %               P(W1) = P(W2) ==> P = 0.5 [3]
-
+%---------------------------------------------------------------------------------
