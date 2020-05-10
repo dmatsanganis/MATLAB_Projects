@@ -54,6 +54,24 @@ end
 % Cmax = max{C1,C2} [8]
 % X = [MUmin - K*Cmax,MUmax + K*Cmax] [9]
 
+% It is easy to deduce that in the case where P(W1) = P(W2) and C1 = C2, 
+% then there exists a unique intersection point for the curves Pw1_x(x) and 
+% Pw2_x(x) which is given by the following equation:
+%                  xo = (1/2) * (MU1 + MU2) [10], 
+% which will necessarily lie within the interval [Xmin,Xmax].
+% However, in the case where P(W1) <> P(W2) and / or C1 <> C2, then there
+% exist two intersection points for the curves Pw1_x(x) and Pw2_x(x) which
+% are given by equation (4) and are stored in variables xo_min and xo_max.
+% In this case, we need to ensure that the ragne of the feature space that
+% we consider includes points xo_min and xo_max, that is we need to enforce
+% that: Xmin <= xo_min [11] and Xmax >= xo_max [12].
+
+% In this setting equation (11) yields:
+%         MUmin - K * Cmax <= xo_min ==> K >= (MUmin - xo_min) / Cmax [13]
+% Likewise, equation (12) yields:
+%         MUmax + K * Cmax >= xo_max ==> K >= (xo_max - MUmax) / Cmax [14]
+% Combining inequalities (13) and (14) gives:
+% K >= max{(MUmin - xo_min) / Cmax,(xo_max - MUmax) / Cmax} [15]
 
 
 %------------------------------------------------------------------------------
