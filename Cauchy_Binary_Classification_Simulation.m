@@ -35,6 +35,12 @@ So = solve(Go==0,x);
 % Covert symbolic object to double to acquire access to the solutions of
 % the equation Go(x) = 0.
 
+So = double(So);
+% Get the number of the obtained solutions.
+No = length(So);
+% Assing the obtained solutions to new variables xo for the case of a
+% single solution and xo_min, xo_max for the case of two solutions.
+
 
 
 %------------------------------------------------------------------------------
