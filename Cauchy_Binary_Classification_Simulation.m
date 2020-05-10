@@ -90,6 +90,8 @@ end
 Xmin = MUmin - K*Cmax;
 Xmax = MUmax + K*Cmax;
 
+% Define the discretization parameter of the feature space.
+dx = 0.001;
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the
