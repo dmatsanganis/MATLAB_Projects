@@ -73,6 +73,20 @@ end
 % Combining inequalities (13) and (14) gives:
 % K >= max{(MUmin - xo_min) / Cmax,(xo_max - MUmax) / Cmax} [15]
 
+% In this setting equation (11) yields:
+%         MUmin - K * Cmax <= xo_min ==> K >= (MUmin - xo_min) / Cmax [13]
+% Likewise, equation (12) yields:
+%         MUmax + K * Cmax >= xo_max ==> K >= (xo_max - MUmax) / Cmax [14]
+% Combining inequalities (13) and (14) gives:
+% K >= max{(MUmin - xo_min) / Cmax,(xo_max - MUmax) / Cmax} [15]
+Cmax = max(C);
+if(No==1)
+    K = 10;
+else
+    K = ceil(max(((MUmin - xo_min) / Cmax),((xo_max - MUmax) / Cmax)));
+end
+
+
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the
