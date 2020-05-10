@@ -31,7 +31,7 @@ Go = subs(G,[mu1 mu2 p c1 c2],[MU1 MU2 P C1 C2]);
 
 
 
-
+%------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the
 % simulation of binary classification problem within an one-dimensional 
 % feature space. The class-conditional probability density functions for 
