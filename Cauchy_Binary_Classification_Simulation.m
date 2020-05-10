@@ -37,6 +37,23 @@ No = length(So);
 % Assing the obtained solutions to new variables xo for the case of a
 % single solution and xo_min, xo_max for the case of two solutions.
 
+% If Statement.
+
+if(No==1)
+    xo = So;
+else
+    xo_min = min(So);
+    xo_max = max(So);
+end
+
+% In fact,we may define the one-dimensional feature space X in terms of an
+% auxiliary parameter K in the following way:
+% MUmin = min{MU1,MU2} [5]
+% MUmax = max{MU1,MU2} [6]
+% Cmin = min{C1,C2} [7]
+% Cmax = max{C1,C2} [8]
+% X = [MUmin - K*Cmax,MUmax + K*Cmax] [9]
+
 
 
 %------------------------------------------------------------------------------
