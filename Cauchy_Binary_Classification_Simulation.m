@@ -84,6 +84,11 @@ else
     K = ceil(max(((MUmin - xo_min) / Cmax),((xo_max - MUmax) / Cmax)));
 end
 
+% Define the lower and upper bounds for the one-dimensional feauture space.
+% Xmin = min([MU1 - K*C1,MU2 - K*C2]);
+% Xmax = max([MU1 + K*C1,MU2 + K*C2]);
+Xmin = MUmin - K*Cmax;
+Xmax = MUmax + K*Cmax;
 
 
 %------------------------------------------------------------------------------
