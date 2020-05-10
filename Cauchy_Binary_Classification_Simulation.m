@@ -93,6 +93,10 @@ Xmax = MUmax + K*Cmax;
 % Define the discretization parameter of the feature space.
 dx = 0.001;
 
+% Compute vector X storing all the possible values of the one-dimensional
+% feature space for the given lower and upper bounds.
+X = Xmin:dx:Xmax;
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the
 % simulation of binary classification problem within an one-dimensional 
