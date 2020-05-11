@@ -98,10 +98,10 @@ dx = 0.001;
 X = Xmin:dx:Xmax;
 
 %------------------------------------------------------------------------------
-% This script file provides fundamental computational functionality for the
-% simulation of binary classification problem within an one-dimensional 
-% feature space. The class-conditional probability density functions for 
-% the problem will be given by the parameterized Cauchy distribution as:
+% This script file provides fundamental computational functionality for the   |  
+% simulation of binary classification problem within an one-dimensional       |  
+% feature space. The class-conditional probability density functions for      |  
+% the problem will be given by the parameterized Cauchy distribution as:      |  
 %   
 %                     1              1
 %     P(x;MU,C) = ------- *  ------------------        [1]
