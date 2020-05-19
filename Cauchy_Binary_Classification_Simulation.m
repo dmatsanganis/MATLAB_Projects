@@ -112,6 +112,10 @@ Px_w2 = p2(X);
 Pw1_x = Px_w1 * P;
 Pw2_x = Px_w2 * (1-P);
 
+% Get the limits of the Y axis.
+Ymin = min(min(Pw1_x),min(Pw2_x));
+Ymax = max(max(Pw1_x),max(Pw2_x));
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
