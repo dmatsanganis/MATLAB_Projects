@@ -97,6 +97,11 @@ dx = 0.001;
 % feature space for the given lower and upper bounds.
 X = Xmin:dx:Xmax;
 
+% Compute the values of the class conditional probabilty density functions 
+% for each point in the feature space X.
+p1 = @(x) (1 / (pi * C1)) * (1 ./ (1 + ((x - MU1)/C1).^2));
+p2 = @(x) (1 / (pi * C2)) * (1 ./ (1 + ((x - MU2)/C2).^2));
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
