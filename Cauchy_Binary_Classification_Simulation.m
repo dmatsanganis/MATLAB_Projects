@@ -119,6 +119,13 @@ Ymax = max(max(Pw1_x),max(Pw2_x));
 % Define the discretization parameter of the class-conditional probability 
 % space Y to be equal to the discretization parameter of the feature space.
 dy = dx;
+% Generate the pairs of coordinates defining the vertical boundary lines 
+% that pass through the intersection points of the two curves. For the case
+% of a unique intersection point the line will be defined by the pair of
+% vectors (Xo,Yo). When there exist to intersection points the
+% corresponding line will be defined by the pairs of vectors (Xo_min,Yo)
+% and (Xo_max,Yo).
+Yo = Ymin:dy:Ymax;
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
