@@ -102,6 +102,11 @@ X = Xmin:dx:Xmax;
 p1 = @(x) (1 / (pi * C1)) * (1 ./ (1 + ((x - MU1)/C1).^2));
 p2 = @(x) (1 / (pi * C2)) * (1 ./ (1 + ((x - MU2)/C2).^2));
 
+% Define the vectors storing the class conditional probability denstity
+% values for each point in the feature space X.
+Px_w1 = p1(X);
+Px_w2 = p2(X);
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
