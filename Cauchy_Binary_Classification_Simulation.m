@@ -107,6 +107,11 @@ p2 = @(x) (1 / (pi * C2)) * (1 ./ (1 + ((x - MU2)/C2).^2));
 Px_w1 = p1(X);
 Px_w2 = p2(X);
 
+% Define the vectors storing the conditional probabilities for the two
+% classes for each point in the feature space.
+Pw1_x = Px_w1 * P;
+Pw2_x = Px_w2 * (1-P);
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
