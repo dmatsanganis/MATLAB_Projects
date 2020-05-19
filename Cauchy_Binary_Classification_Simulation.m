@@ -127,6 +127,7 @@ dy = dx;
 % and (Xo_max,Yo).
 Yo = Ymin:dy:Ymax;
 
+% If Statement. 
 if(No==1)
     Xo = xo * ones(1,length(Yo));
 else
