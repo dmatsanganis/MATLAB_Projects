@@ -145,6 +145,9 @@ hold on
 plot(X,Pw1_x,'-r','LineWidth',2.0);
 plot(X,Pw2_x,'-b','LineWidth',2.0);
 
+% Plot the boundary lines.
+
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
