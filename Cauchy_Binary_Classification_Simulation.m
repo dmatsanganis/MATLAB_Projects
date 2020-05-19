@@ -135,6 +135,16 @@ else
     Xo_max = xo_max * ones(1,length(Yo));
 end
 
+% Plot the class-conditional probability density functions for each point
+% in the feature space X by shading the intersection region of the two
+% curves.
+figure('Name','Class Conditional Probability Density Functions');
+xlim([Xmin,Xmax]);
+ylim([Ymin,Ymax]);
+hold on
+plot(X,Pw1_x,'-r','LineWidth',2.0);
+plot(X,Pw2_x,'-b','LineWidth',2.0);
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
