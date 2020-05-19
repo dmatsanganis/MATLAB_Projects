@@ -116,6 +116,10 @@ Pw2_x = Px_w2 * (1-P);
 Ymin = min(min(Pw1_x),min(Pw2_x));
 Ymax = max(max(Pw1_x),max(Pw2_x));
 
+% Define the discretization parameter of the class-conditional probability 
+% space Y to be equal to the discretization parameter of the feature space.
+dy = dx;
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
