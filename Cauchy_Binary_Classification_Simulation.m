@@ -127,6 +127,13 @@ dy = dx;
 % and (Xo_max,Yo).
 Yo = Ymin:dy:Ymax;
 
+if(No==1)
+    Xo = xo * ones(1,length(Yo));
+else
+    Xo_min = xo_min * ones(1,length(Yo));
+    Xo_max = xo_max * ones(1,length(Yo));
+end
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
