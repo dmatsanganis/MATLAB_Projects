@@ -154,6 +154,13 @@ else
     plot(Xo_max,Yo,'k--','LineWidth',2.8);
 end
 
+xlabel('x');
+ylabel('p(x|W)');
+legend({'p(x|w_1)','p(x|w_2)'});
+H1=area(X,Pw1_x,'FaceColor','r');
+H1.FaceAlpha = 0.2;
+H2=area(X,Pw2_x,'FaceColor','b');
+H2.FaceAlpha = 0.2;
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
