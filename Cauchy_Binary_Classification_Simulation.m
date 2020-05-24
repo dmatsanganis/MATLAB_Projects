@@ -179,6 +179,10 @@ N = 10000;
 N1 = round(P*N);
 % Set the number of samples to be drawn from W2.
 N2 = N - N1;
+% Generate random samples from p(x|W1).
+S1 = cauchyrnd(MU1,C1,N1);
+% Generate random samples from p(x|W2).
+S2 = cauchyrnd(MU2,C2,N2);
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
