@@ -166,11 +166,11 @@ legend({'P(w1|x)','P(w2|x)'});
 hold off
 
 %------------------------------------------------------------------------------
-% Simulate the Bayesian classification process by generating two sets of  
-% (N) random samples for the classes W1 and W1. Random samples from W1 will 
-% be drawn from the probability density function p(x|W1) and stored in 
-% vector X1, whereas random samples from W2 will be drawn from the 
-% probability density function p(x|W2) and stored in vector X2.
+% Simulate the Bayesian classification process by generating two sets of      |
+% (N) random samples for the classes W1 and W1. Random samples from W1 will   |
+% be drawn from the probability density function p(x|W1) and stored in        |  
+% vector X1, whereas random samples from W2 will be drawn from the            |  
+% probability density function p(x|W2) and stored in vector X2.               |  
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
