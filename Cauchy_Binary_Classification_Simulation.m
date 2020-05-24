@@ -161,6 +161,9 @@ H1=area(X,Pw1_x,'FaceColor','r');
 H1.FaceAlpha = 0.2;
 H2=area(X,Pw2_x,'FaceColor','b');
 H2.FaceAlpha = 0.2;
+grid on
+legend({'P(w1|x)','P(w2|x)'});
+hold off
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
