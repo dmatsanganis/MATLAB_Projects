@@ -175,6 +175,10 @@ hold off
 
 % Set the total number of samples to be drawn from both classes.
 N = 10000;
+% Set the number of samples to be drawn from W1.
+N1 = round(P*N);
+% Set the number of samples to be drawn from W2.
+N2 = N - N1;
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
