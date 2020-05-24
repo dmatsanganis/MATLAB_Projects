@@ -173,6 +173,9 @@ hold off
 % probability density function p(x|W2) and stored in vector X2.               |  
 %------------------------------------------------------------------------------
 
+% Set the total number of samples to be drawn from both classes.
+N = 10000;
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
