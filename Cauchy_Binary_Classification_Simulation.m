@@ -146,7 +146,13 @@ plot(X,Pw1_x,'-r','LineWidth',2.0);
 plot(X,Pw2_x,'-b','LineWidth',2.0);
 
 % Plot the boundary lines.
-
+% If Statement. 
+if(No==1)
+    plot(Xo,Yo,'k--','LineWidth',2.8);
+else
+    plot(Xo_min,Yo,'k--','LineWidth',2.8);
+    plot(Xo_max,Yo,'k--','LineWidth',2.8);
+end
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
