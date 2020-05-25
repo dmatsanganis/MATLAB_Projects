@@ -196,6 +196,10 @@ width = (x_max - x_min)/50;
 % Create the histogram for the random samples from W2.
 [s2_num,s2_edges,~] = histcounts(S2,'Normalization','count','BinWidth',width);
 
+% Get the y axis limits.
+y_min = min(min(s1_num),min(s2_num));
+y_max = max(max(s1_num),max(s2_num));
+
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
