@@ -184,6 +184,12 @@ S1 = cauchyrnd(MU1,C1,N1);
 % Generate random samples from p(x|W2).
 S2 = cauchyrnd(MU2,C2,N2);
 
+% Get the x axis limits.
+x_min = min(min(S1),min(S2));
+x_max = max(max(S1),max(S2));
+
+width = (x_max - x_min)/50;
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
