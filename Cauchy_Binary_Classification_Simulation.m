@@ -190,6 +190,9 @@ x_max = max(max(S1),max(S2));
 
 width = (x_max - x_min)/50;
 
+% Create the histogram for the random samples from W1.
+[s1_num,s1_edges,~] = histcounts(S1,'Normalization','count','BinWidth',width);
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
