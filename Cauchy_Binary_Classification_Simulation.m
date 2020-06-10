@@ -200,6 +200,12 @@ width = (x_max - x_min)/50;
 y_min = min(min(s1_num),min(s2_num));
 y_max = max(max(s1_num),max(s2_num));
 
+% Variables s1_edges and s2_edges store the edge points of the identfied
+% bins for each set of random samples from classes W1 and W2. Thus, in
+% order to plot the number of observations that fall within each bin we
+% need to acquire to vectors x1 and x2 that store the mid points of each 
+% bin.
+
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
