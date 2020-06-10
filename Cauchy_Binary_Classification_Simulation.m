@@ -214,6 +214,11 @@ bins_number2 = length(s2_num);
 x1 = zeros(1,bins_number1);
 x2 = zeros(1,bins_number2);
 
+% Populate vector x1.
+for k1 = 1:bins_number1
+    x1(k1) = s1_edges(k1) + s1_edges(k1+1);
+end
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
