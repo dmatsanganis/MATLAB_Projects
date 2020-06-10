@@ -206,6 +206,9 @@ y_max = max(max(s1_num),max(s2_num));
 % need to acquire to vectors x1 and x2 that store the mid points of each 
 % bin.
 
+% Get the number of bins identified within each set of random samples.
+bins_number1 = length(s1_num);
+bins_number2 = length(s2_num);
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
