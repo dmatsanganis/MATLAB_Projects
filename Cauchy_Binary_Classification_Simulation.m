@@ -210,6 +210,10 @@ y_max = max(max(s1_num),max(s2_num));
 bins_number1 = length(s1_num);
 bins_number2 = length(s2_num);
 
+% Initialize vectors x1 and x2.
+x1 = zeros(1,bins_number1);
+x2 = zeros(1,bins_number2);
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
