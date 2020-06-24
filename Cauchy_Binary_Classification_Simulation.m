@@ -228,6 +228,11 @@ end
 figure('Name','Empirical Histograms of random samples from w1 and w2');
 xlim([x_min,x_max]);
 ylim([y_min,y_max]);
+
+hold on
+h1 = bar(x1,s1_num,'LineWidth',1.5);
+h2 = bar(x2,s2_num,'LineWidth',1.5);
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
