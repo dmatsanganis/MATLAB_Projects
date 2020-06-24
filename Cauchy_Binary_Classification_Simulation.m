@@ -233,6 +233,8 @@ hold on
 h1 = bar(x1,s1_num,'LineWidth',1.5);
 h2 = bar(x2,s2_num,'LineWidth',1.5);
 
+set(h1,'FaceColor','r');
+set(h2,'FaceColor','b');
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
