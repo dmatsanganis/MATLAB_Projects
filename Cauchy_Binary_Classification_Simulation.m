@@ -235,6 +235,8 @@ h2 = bar(x2,s2_num,'LineWidth',1.5);
 
 set(h1,'FaceColor','r');
 set(h2,'FaceColor','b');
+h1.FaceAlpha = 0.5;
+h2.FaceAlpha = 0.5;
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
