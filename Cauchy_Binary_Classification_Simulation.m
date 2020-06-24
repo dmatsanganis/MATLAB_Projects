@@ -237,6 +237,11 @@ set(h1,'FaceColor','r');
 set(h2,'FaceColor','b');
 h1.FaceAlpha = 0.5;
 h2.FaceAlpha = 0.5;
+legend({'w1 samples','w2 samples'});
+hold off
+grid on
+xlabel('x');
+ylabel('Number of Samples');
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
