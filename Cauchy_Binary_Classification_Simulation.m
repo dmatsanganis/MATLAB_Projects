@@ -244,11 +244,14 @@ xlabel('x');
 ylabel('Number of Samples');
 
 %------------------------------------------------------------------------------
-% Classifying the previously drawn random samples according the Bayes rule
-% requires the determination of the two decision regions R1 and R2 such
-% that:
-%      R1 = {x in : Go(x) >= 0} [16]
-%      R2 = {x in : Go(x) < 0}  [17]
+% Classifying the previously drawn random samples according the Bayes rule    |  
+% requires the determination of the two decision regions R1 and R2 such       |
+% that:                                                                       |
+%      R1 = {x in : Go(x) >= 0} [16]                                          |
+%      R2 = {x in : Go(x) < 0}  [17]                                          |
+%------------------------------------------------------------------------------
+
+
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
