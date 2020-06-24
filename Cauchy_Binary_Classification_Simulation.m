@@ -243,6 +243,7 @@ grid on
 xlabel('x');
 ylabel('Number of Samples');
 
+%------------------------------------------------------------------------------
 % Classifying the previously drawn random samples according the Bayes rule
 % requires the determination of the two decision regions R1 and R2 such
 % that:
