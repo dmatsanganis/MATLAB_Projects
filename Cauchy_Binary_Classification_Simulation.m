@@ -224,6 +224,10 @@ for k2 = 1:bins_number2
     x2(k2) = s2_edges(k2) + s2_edges(k2+1);
 end
 
+% Plot the empirical histograms for the random samples in each class.
+figure('Name','Empirical Histograms of random samples from w1 and w2');
+xlim([x_min,x_max]);
+ylim([y_min,y_max]);
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
 % simulation of binary classification problem within an one-dimensional       |  
