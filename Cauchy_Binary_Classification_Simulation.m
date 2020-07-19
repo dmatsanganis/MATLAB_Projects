@@ -270,6 +270,10 @@ G1 = double(G1)';
 G2 = Go(S2);
 G2 = double(G2)';
 
+% Compute the overall classification accuracy for class W1.
+AccW1 = length(G1(G1>=0)) / N1;
+fprintf('Classification accuracy for samples from W1: %f\n',AccW1);
+
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
