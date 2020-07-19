@@ -278,6 +278,9 @@ fprintf('Classification accuracy for samples from W1: %f\n',AccW1);
 AccW2 = length(G2(G2<0)) / N2;
 fprintf('Classification accuracy for samples from W2: %f\n',AccW2);
 
+% Compute the overall classification accuracy.
+Acc = (N1 * AccW1 + N2 * AccW2) / N;
+fprintf('Overall classification accuracy: %f\n',Acc);
 
 
 %------------------------------------------------------------------------------
