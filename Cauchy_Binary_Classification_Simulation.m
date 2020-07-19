@@ -253,6 +253,10 @@ Go = symfun(Go,x);
 %                    S1correct = {x in S1: Go(x) >= 0} [18]
 %                    S2correct = {x in S2: Go(x) <  0} [19]
 
+% Evaluate Go on each sample in S1.
+G1 = Go(S1);
+G1 = double(G1)';
+
 
 
 
