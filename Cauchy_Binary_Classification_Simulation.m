@@ -274,6 +274,11 @@ G2 = double(G2)';
 AccW1 = length(G1(G1>=0)) / N1;
 fprintf('Classification accuracy for samples from W1: %f\n',AccW1);
 
+% Compute the overall classification accuracy for class W2.
+AccW2 = length(G2(G2<0)) / N2;
+fprintf('Classification accuracy for samples from W2: %f\n',AccW2);
+
+
 
 %------------------------------------------------------------------------------
 % This script file provides fundamental computational functionality for the   |  
