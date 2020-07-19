@@ -248,6 +248,13 @@ ylabel('Number of Samples');
 % sets S1 and S2. 
 Go = symfun(Go,x);
 
+% Thus, the correctly classified samples will be given by
+% the following sets:
+%                    S1correct = {x in S1: Go(x) >= 0} [18]
+%                    S2correct = {x in S2: Go(x) <  0} [19]
+
+
+
 
 
 %------------------------------------------------------------------------------
