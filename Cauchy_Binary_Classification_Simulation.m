@@ -243,6 +243,13 @@ grid on
 xlabel('x');
 ylabel('Number of Samples');
 
+% To this end, the symbolic object Go needs to be transformed into a
+% symbolic function that can be evaluated on any point pertaining to the
+% sets S1 and S2. 
+Go = symfun(Go,x);
+
+
+
 %------------------------------------------------------------------------------
 % Classifying the previously drawn random samples according the Bayes rule    |  
 % requires the determination of the two decision regions R1 and R2 such       |
